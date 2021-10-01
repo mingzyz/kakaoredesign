@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카카오페이지 스테이지</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-wrap flex items-center justify-around my-10 px-38">
+      <a href="index.html"><img src="img/logo.png" alt=""></a>
+      <div class="flex">
+        <div class="search pl-4 pr-10 flex items-center relative">
+          <input type="text">
+          <div class="absolute right-3">
+            <img src="img/search.svg" alt="">
+          </div>
+        </div>
+        <div class="ml-8 flex">
+          <img src="img/heart.svg" alt="" class="mr-4">
+          <img src="img/user.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="banner-slide">
+    <section class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background: url('img/두번은안당해.jpg') no-repeat center 10%; background-size:cover;">
+          <div class="slide-content w-full h-1/2 absolute bottom-0">
+            <div class="slide-txt text-right absolute">
+              <img src="img/두번은안당해타이포.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background: url('img/서리꽃나리는강.jpg') no-repeat 50% 20%; background-size:cover;">
+          <div class="slide-content w-full h-1/2 absolute bottom-0">
+            <div class="slide-txt text-right absolute w-2/3">
+              <img src="img/서리꽃타이포.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background: url('img/멸망한세계의요리사.jpg') no-repeat center 45%; background-size:cover;">
+          <div class="slide-content w-full h-1/2 absolute bottom-0">
+            <div class="slide-txt text-right absolute">
+              <img src="img/요리사타이포.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background: url('img/부적절한계약.jpg') no-repeat center 20%; background-size:cover;">
+          <div class="slide-content w-full h-1/2 absolute bottom-0">
+            <div class="slide-txt text-right absolute">
+              <img src="img/계약타이포.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </section>
+  </section>
+  <section class="stage-1 notosans tracking-tighter mt-32">
+    <div class="stage-wrap">
+      <div class="line mx-auto relative">
+        <div class="absolute flex flex-col">
+          <span class="font-bold text-xl">
+            화제의 스테이지
+          </span>
+          <span class="self-end -mt-1 text-sm">
+            더보기+
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="stage-wrap-2 mt-20 flex justify-center">
+      <div class="stage-card flex justify-center" style="background: url('img/청연의괴물.jpg') no-repeat center center; background-size:cover;">
+        <div class="card-content text-center flex flex-col justify-end w-full p-2">
+          <div class="font-bold truncate">청연의 괴물</div>
+          <div class="text-sm">진기린</div>
+        </div>
+      </div>
+      <div class="stage-card flex mt-10 justify-center" style="background: url('img/폐왕성.jpg') no-repeat center center; background-size:cover;">
+        <div class="card-content text-center flex flex-col justify-end w-full p-2">
+          <div class="font-bold truncate">폐왕성</div>
+          <div class="text-sm">소년행</div>
+        </div>
+      </div>
+      <div class="stage-card flex justify-center" style="background: url('img/동천만물수리점.png') no-repeat center center; background-size:cover;">
+        <div class="card-content text-center flex flex-col justify-end w-full p-2">
+          <div class="font-bold truncate">동천 만물수리점</div>
+          <div class="text-sm">마니</div>
+        </div>
+      </div>
+      <div class="stage-card flex justify-center mt-10" style="background: url('img/월영달에피는꽃.jpg') no-repeat center center; background-size:cover;">
+        <div class="card-content text-center flex flex-col justify-end w-full p-2">
+          <div class="font-bold truncate">월영, 달에 피는 꽃</div>
+          <div class="text-sm">운린</div>
+        </div>
+      </div>
+      <div class="stage-card justify-center flex" style="background: url('img/멸망한세계의요리사.jpg') no-repeat center center; background-size:cover;">
+        <div class="card-content text-center flex flex-col justify-end w-full p-2">
+          <div class="font-bold truncate">멸망한 세계의 요리사</div>
+          <div class="text-sm">복남</div>
+        </div>
+      </div>
+      <div class="stage-card flex justify-center mt-10" style="background: url('img/천마신.jpg') no-repeat center center; background-size:cover;">
+        <div class="card-content text-center flex flex-col justify-end w-full p-2">
+          <div class="font-bold truncate">천마신</div>
+          <div class="text-sm">백두혼</div>
+        </div>
+      </div>
+      <div class="stage-card flex justify-center" style="background: url('img/템빨.jpg') no-repeat center center; background-size:cover;">
+        <div class="card-content text-center flex flex-col justify-end w-full p-2">
+          <div class="font-bold truncate">템빨</div>
+          <div class="text-sm">박새날</div>
+        </div>
+      </div>
+      <div class="stage-card flex justify-center mt-10" style="background: url('img/서리꽃나리는강.jpg') no-repeat center center; background-size:cover;">
+        <div class="card-content text-center flex flex-col justify-end w-full p-2">
+          <div class="font-bold truncate">서리꽃 나리는 강</div>
+          <div class="text-sm">자색련</div>
+        </div>
+      </div>
+      <div class="stage-card flex justify-center" style="background: url('img/천재플레이어가되었다.png') no-repeat center center; background-size:cover;">
+        <div class="card-content text-center flex flex-col justify-end w-full p-2">
+          <div class="font-bold truncate">천재플레이어가되었다</div>
+          <div class="text-sm">제네럴K</div>
+        </div>
+      </div>
+      <div class="stage-card flex justify-center mt-10" style="background: url('img/부적절한계약.jpg') no-repeat center center; background-size:cover;">
+        <div class="card-content text-center flex flex-col justify-end w-full p-2">
+          <div class="font-bold truncate">부적절한 계약</div>
+          <div class="text-sm">김수정c</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stage-2 notosans tracking-tighter mt-32">
+    <div class="stage-2-wrap relative">
+      <div class="line mx-auto relative">
+        <div class="absolute flex flex-col">
+          <span class="font-bold text-xl">
+            오늘의 스테이지
+          </span>
+          <span class="self-end -mt-1 text-sm">
+            더보기+
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="tab-wrap font-bold absolute head">
+      <ul class="flex">
+        <li data-tb="tab-box-1__1__head" data-tb-clicked><div class="tab">판타지</div></li>
+        <li data-tb="tab-box-1__2__head"><div class="tab">현판</div></li>
+        <li data-tb="tab-box-1__3__head"><div class="tab">무협</div></li>
+        <li data-tb="tab-box-1__4__head"><div class="tab">로맨스</div></li>
+        <li data-tb="tab-box-1__5__head"><div class="tab">로판</div></li>
+        <li data-tb="tab-box-1__6__head"><div class="tab">BL</div></li>
+      </ul>
+    </div>
+    <div class="stage-2-wrap-2 mt-20 flex justify-center body">
+      <ul>
+        <li data-tb="tab-box-1__1__body" class="flex">
+          <div class="hot-stage" style="background: url('img/멸망한세계의요리사.jpg') no-repeat center 45%; background-size:cover;">
+            <div class="hot-stage-txt w-full h-full p-10 tracking-tighter flex flex-col justify-end" style="background-color:rgba(97, 87, 70, 0.5);">
+              <div class="kakao-tag font-bold self-start px-2">카카오페이지 웹소설</div>
+              <div class="text-5xl font-bold ml-8">멸망한 세계의 요리사</div>
+              <div class="hot-stage-txt__content text-sm ml-8 mt-4">
+                '시련'으로부터 살아남아 '성좌'의 목을 노리려면 우선 먹방을 해야 한다?<br>
+                멸망한 세계의 역대급 요리사 이야기!
+              </div>
+            </div>
+          </div>
+          <div class="hot-list">
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/1.png" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">1. 테루의 노래</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    pagePyc6F5
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/2.png" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">2. 망한 세계의 기사</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    심술
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/3.png" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">3. 마법학부의 대마도사</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    청루연
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/4.png" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">4. 초월마법 개발백서</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    태스크
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/5.png" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">5. 연금술사 하이네</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    BOUNDARY
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li data-tb="tab-box-1__2__body" class="flex">
+          <div class="hot-stage" style="background: url('img/그라운드의철벽.jpg') no-repeat center center; background-size:cover;">
+            <div class="hot-stage-txt w-full h-full p-10 tracking-tighter flex flex-col justify-end" style="background-color:rgba(9, 62, 89, 0.5);">
+              <div class="kakao-tag font-bold self-start px-2">카카오페이지 웹소설</div>
+              <div class="text-6xl font-bold ml-8">그라운드의 철벽</div>
+              <div class="hot-stage-txt__content text-sm ml-8 mt-4">
+                "지금은 축구가 제일 즐거워요. 이젠 이게 제 꿈이에요."<br><br>
+                그저 노력 하나만으로 성장하는 한 소년의 이야기.<br>
+                골키퍼 정세현의 함성이 지금 그라운드에 울려퍼진다.
+              </div>
+            </div>
+          </div>
+          <div class="hot-list">
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/6.jpeg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">1. 오늘의 운세</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    무장
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/7.jpeg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">2. 콜사인</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    조석호
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/8.jpeg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">3. 기억학개론</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    담덕
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/9.jpeg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">4. 무결점 미드필더</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    라이즈리얼
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/10.jpeg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">5. 집행자K</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    진소요
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li data-tb="tab-box-1__3__body" class="flex">
+          <div class="hot-stage" style="background: url('img/폐왕성cut.png') no-repeat center center; background-size:cover;">
+            <div class="hot-stage-txt w-full h-full p-10 tracking-tighter flex flex-col justify-end" style="background-color:rgba(36,36,36,0.5);">
+              <div class="kakao-tag font-bold self-start px-2">카카오페이지 웹소설</div>
+              <div class="text-6xl font-bold ml-8">폐왕성</div>
+              <div class="hot-stage-txt__content text-sm ml-8 mt-4">
+                "우리가 바라는 새로운 세상은..."<br>
+                역사소설 [무인행]으로 사랑받은 작가 소년행이 새롭게 그리는 세상<br><br>
+                새로운 세상을 꿈꾸는 무사 김재명, 그 여정의 끝엔 어떤 운명이 기다리고 있을 것인가.
+              </div>
+            </div>
+          </div>
+          <div class="hot-list">
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/11.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">1. 도제</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    글작소
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/12.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">2. 소림해동</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    유진림
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/천마신.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">3. 천마신</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    백두혼
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/14.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">4. 십단공</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    정희웅
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/15.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">5. 일언무적</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    유재용
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li data-tb="tab-box-1__4__body" class="flex">
+          <div class="hot-stage" style="background: url('img/16.jpg') no-repeat center 25%; background-size:cover;">
+            <div class="hot-stage-txt w-full h-full p-10 tracking-tighter flex flex-col justify-end" style="background-color:rgba(155, 82, 94, 0.5);">
+              <div class="kakao-tag font-bold self-start px-2">카카오페이지 웹소설</div>
+              <div class="text-4xl font-bold ml-8">바라고 바라옵건대</div>
+              <div class="hot-stage-txt__content text-sm ml-8 mt-4">
+                “내일부터 황궁에 들어갈 것이다.”<br><br>
+
+                어머니와 강제로 떨어지고 연가의 일원이 된, 이연.<br>
+                벗어나려 할수록 질기게 파고드는 운명의 실타래에 희망을 잃는다.<br><br>
+
+                “수줍음이 많은 것인지, 겁이 많은 것인지.”<br><br>
+
+                그런 이연에게 봄바람처럼 불어온 황태자, 현.<br>
+                이연은 봄바람으로부터 달아나고자 하였고, 현은 그녀를 보낼 수가 없었다.
+              </div>
+            </div>
+          </div>
+          <div class="hot-list">
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/청연의괴물.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">1. 청연의 괴물</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    진기린
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/월영달에피는꽃.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">2. 월영, 달에 피는 꽃</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    운린
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/부적절한계약.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">3. 부적절한 계약</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    김수정c
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/서리꽃나리는강.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">4. 서리꽃 나리는 강</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    자색련
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/신의신부.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">5. 신의 신부</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    김영
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li data-tb="tab-box-1__5__body" class="flex">
+          <div class="hot-stage" style="background: url('img/두번은안당해.jpg') no-repeat center 10%; background-size:cover;">
+            <div class="hot-stage-txt w-full h-full p-10 tracking-tighter flex flex-col justify-end" style="background-color:rgba(151, 84, 22, 0.5);">
+              <div class="kakao-tag font-bold self-start px-2">카카오페이지 웹소설</div>
+              <div class="text-5xl font-bold ml-8">두번은 안 당해</div>
+              <div class="hot-stage-txt__content text-sm ml-8 mt-4">
+                배신당해 처참하게 버려진 정령사, 이사벨라. <br>
+                계략에 빠져 사랑하는 이조차 믿지 못하고 떠나 보내야 했다. <br>
+                누구보다 소중했던 사람. 그러나 이제 와 돌이킬 수 없었다. <br><br>
+                그런데 그때, 팔찌에서 기묘한 빛이 터져 나오고 18살로 돌아왔다. <br>
+                기적처럼 다시 얻은 기회. <br><br>
+                ‘이번엔 절대.’ 무슨 일이 있어도, 세상이 어떻게 뒤집히든 이번엔 그의 손을 놓지 않으리라.
+              </div>
+            </div>
+          </div>
+          <div class="hot-list">
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/17.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">1. 첫사랑을 찾습니다</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    배고픈밤
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/18.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">2. 친구끼리 이러는 거 아니야</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    쟈화
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/19.png" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">3. 그는 내 여동생을 사랑했다</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    꽃니랑
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/20.png" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">4. 나는 대용품이었다</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    해사
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/21.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">5. 과한 관심은 사양입니다</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    최연
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li data-tb="tab-box-1__6__body" class="flex">
+          <div class="hot-stage" style="background: url('img/꿈꾸는용이잠든나라.jpg') no-repeat center 30%; background-size:cover;">
+            <div class="hot-stage-txt w-full h-full p-10 tracking-tighter flex flex-col justify-end" style="background-color:rgba(46, 40, 65, 0.5);">
+              <div class="kakao-tag font-bold self-start px-2">카카오페이지 웹소설</div>
+              <div class="text-4xl font-bold ml-8">꿈꾸는 용이 잠든 나라</div>
+              <div class="hot-stage-txt__content text-sm ml-8 mt-4">
+                태양신의 사랑을 받는 왕족으로 태어났으나 <br>
+                검은 머리인 탓에 반편이로 취급당하던 세시얀.<br><br>
+
+                어째서인지 적국의 왕이, 그를 왕비로 달라 요청했다.<br><br>
+
+                굴욕감에 떨며 자진을 하기엔 이 한 목숨이 소중하여<br>
+                어디를 가건 굳건히 견디며 살아가리라 다짐하였는데.
+              </div>
+            </div>
+          </div>
+          <div class="hot-list">
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/22.jpeg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">1. 해와 비</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    소박한은진
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/23.jpeg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">2. 무드셀라 증후군</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    pleno
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/24.jpeg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">3. 어둠이 내리면</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    HaNul
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/25.jpeg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">4. 신목의 약조</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    천산홍엽
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+            <div class="hot-list__items flex">
+              <div class="hot-pic">
+                <img src="img/26.jpeg" alt="">
+              </div>
+              <div class="flex flex-col justify-between p-3 hot-content">
+                <div>
+                  <div>
+                    <span class="font-bold">5. 이해의 정체</span>
+                    <span class="update-tag">UP</span>
+                  </div>
+                  <div class="text-xs text-gray-500 ml-4">
+                    각두끼
+                  </div>
+                </div>
+                <div class="text-sm text-right text-gray-300">
+                  <span class="text-red-500 mr-1"><i class="fas fa-heart"></i></span>
+                  <span>9.3</span>
+                  <span class="text-blue-500 ml-2 mr-1"><i class="fas fa-thumbs-up"></i></span>
+                  <span>13만</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+  <section class="stage-event-banner flex justify-center mt-32">
+    <img src="img/event.png" alt="">
+  </section>
+  <section class="stage-3 notosans tracking-tighter mt-32">
+    <div class="stage-3-wrap relative">
+      <div class="line mx-auto relative">
+        <div class="absolute flex flex-col">
+          <span class="font-bold text-xl">
+            신규 스테이지
+          </span>
+          <span class="self-end -mt-1 text-sm">
+            더보기+
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="stage-3-wrap-2 mt-20 flex justify-center">
+      <div class="new-stage-slide">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="flex">
+                <div class="new-stage">
+                  <img class="object-cover w-full h-full" style="object-position: center 20%;" src="img/18.jpg" alt="">
+                </div>
+                <div class="new-txt py-20 flex flex-col">
+                  <div class="kakao-tag font-bold self-start px-2">카카오페이지 웹소설</div>
+                  <div class="font-bold text-4xl ml-2 mt-1">친구끼리 이러는 거 아니야</div>
+                  <div class="text-sm self-end mt-2">
+                    <span>쟈화</span>
+                    <span class="text-gray-500 mx-1">|</span>
+                    <span class="text-purple-400">로판</span>
+                  </div>
+                  <div class="text-sm mt-10">
+                    리시안셔스 공작가의 후계자를 꼬셔 버렸다.<br>
+                    그가 은근슬쩍 내 손을 잡는다.<br>
+                    나는 한숨을 내쉬며 잡힌 손을 비틀어 빼냈다.<br><br>
+                    "친구끼리 이러는 거 아니야."<br>
+                    "겨우 손 한번 잡았다고 부끄러워하는 거야, 리엔?"<br><br>
+                    아무리 생각해도 저 말은 '겨우 손 하나 잡았다'고 얼굴 전체가 벌게진 카르시온이 할 말은 아닌 것 같다.<br><br>
+                    "난 리엔과 더한 것도 할 수 있는데."<br><br>
+                    말은 번지르르했지만, 갈 곳 잃은 푸른 동공은 내 눈 하나 못 맞춰오고 있었다.<br>
+                    그러니까, 그렇게 수줍은 얼굴로 말해봤자 설득력 없다고. 이 자식아
+                  </div>
+                  <div class="mt-10 tracking-widest text-lg self-end"><u>첫 회 읽기</u></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex">
+                <div class="new-stage">
+                  <img class="object-cover w-full h-full" style="object-position: center 8%;" src="img/20.png" alt="">
+                </div>
+                <div class="new-txt py-20 flex flex-col">
+                  <div class="kakao-tag font-bold self-start px-2">카카오페이지 웹소설</div>
+                  <div class="font-bold text-5xl ml-2 mt-1">나는 대용품이었다</div>
+                  <div class="text-sm self-end mt-2">
+                    <span>해사</span>
+                    <span class="text-gray-500 mx-1">|</span>
+                    <span class="text-purple-400">로판</span>
+                  </div>
+                  <div class="text-sm mt-10">
+                    모두가 원하는 대로 완벽한 공작 영애로 살아왔다.<br>
+                    하지만 나는 진짜 공작 영애의 빈자리를 채우기 위해 입양된 가짜에 불과했고,<br>
+                    진짜 공작 영애가 돌아오자 모두들 내게서 등을 돌렸다.<br><br>
+                    나는 그들을 진심으로 사랑했지만, 그들에게 있어서 나는 공작 영애의 대용품에 불과했다.<br><br>
+                    “죽기 전에 좋은 거 하나 알려줄까? 사실 나도 가짜야.”<br><br>
+                    그런데, 천사처럼 웃던 공작 영애는 사실 가짜였다. 내가 믿었던 이들의 가짜 사랑처럼.<br><br>
+                    “오늘부터 언니라고 불러도 되죠?”<br><br>
+                    그러니, 나 역시 똑같이 거짓으로 돌려줄 수밖에.
+                  </div>
+                  <div class="mt-10 tracking-widest text-lg self-end"><u>첫 회 읽기</u></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex">
+                <div class="new-stage">
+                  <img class="object-cover w-full h-full" src="img/동천만물수리점.png" alt="">
+                </div>
+                <div class="new-txt py-20 flex flex-col">
+                  <div class="kakao-tag font-bold self-start px-2">카카오페이지 웹소설</div>
+                  <div class="font-bold text-5xl ml-2 mt-1">동천 만물수리점</div>
+                  <div class="text-sm self-end mt-2">
+                    <span>마니</span>
+                    <span class="text-gray-500 mx-1">|</span>
+                    <span class="text-red-400">드라마</span>
+                  </div>
+                  <div class="text-sm mt-10">
+                    '동천 만물수리점' 10년 후<br>
+                    <br>
+                    자라지 않는 해명과 달리 소년에서 청년이 된 수호.<br>
+                    '동천 만물수리점'에서 아르바이트 겸 일을 시작한 지 어언 2년.<br>
+                    <br>
+                    고객증정용 우산에 커플 사진을 프린트하고<br>
+                    해명 유하 포에버 같은 문구를 박아 놓는 사장님을 보며 알바생은 난감하다.<br>
+                    <br>
+                    ‘그런 걸로 삐지지 말라구요!’<br>
+                    <br>
+                    열일하는 알바생 수호 덕분에 오늘도 ‘동천 만물수리점’은 평화롭습니다.
+                  </div>
+                  <div class="mt-10 tracking-widest text-lg self-end"><u>첫 회 읽기</u></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <footer class="footer notosans tracking-tighter mt-40">
+    <div class="stage-3-wrap text-xs">
+      <div class="line mx-auto"></div>
+      <div class="content p-8 flex justify-center items-center">
+        <div class="footer__logo mr-10">
+          <img src="https://kakaoent.com/img/logo.png" alt="">
+        </div>
+        <div class="opacity-50 font-light">
+          <div>
+            <span>회사소개</span>
+            <span class="mx-2">|</span>
+            <span>이용약관</span>
+            <span class="mx-2">|</span>
+            <span>개인정보처리방침</span>
+            <span class="mx-2">|</span>
+            <span>청소년보호정책</span>
+            <span class="mx-2">|</span>
+            <span>권리침해신고센터</span>
+            <span class="mx-2">|</span>
+            <span>공지사항</span>
+            <span class="mx-2">|</span>
+            <span>고객센터</span>
+            <span class="mx-2">|</span>
+            <span>도움말</span>
+            <br>
+            <span>(주)카카오엔터테인먼트 사업자 정보</span>
+            <span class="mx-2">|</span>
+            <span>사업자 정보 확인</span>
+            <br>
+          </div>
+          <div class="mt-2">
+            <span class="mr-2">대표자 : 이진수, 김성수</span>
+            <span class="mr-2">주소 : 경기도 성남시 분당구 판교역로 221</span>
+            <span class="mr-2">사업자등록번호 : 220-88-02594</span>
+            <span>통신판매업신고 : 2018-성남분당B-0004</span>
+            <br>
+            <span class="mr-2">대표전화 : 1644-4755</span>
+            <span class="mr-2">이메일 : stage@kakaoent.com</span>
+            <span>호스팅서비스사업자 : (주)카카오엔터테인먼트</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
